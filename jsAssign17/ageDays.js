@@ -10,4 +10,4 @@ const ageIndays = (yrs) => {
     return yrs * oneYear ;
 }
 
-console.log("Your age in days are :",ageIndays(2.5));
+console.log("Your age in days are :",ageIndays(0));
