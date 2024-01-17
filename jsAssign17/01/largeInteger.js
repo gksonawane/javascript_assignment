@@ -2,14 +2,15 @@
 input [1,2,3] & output will be 124 show result like [1,2,4]*/
 
 let num = [1, 2, 3];
+let num1 = [1, 4, 3];
 const incrementLargeInteger = (arr) => {
     let max = arr[0] ;
     let index = 0 ;
     for(let i = 0 ; i<arr.length ; i++){
         for(let j = 0; j<arr.length ; j++){
-            if(arr[i] > arr[j]){
-                max = arr[i] ;
-                index = i ;
+            if(arr[i] < arr[j]){
+                max = arr[j] ;
+                index = j ;
             }
         }
     }
@@ -19,7 +20,7 @@ const incrementLargeInteger = (arr) => {
     return arr;
 }
 
-console.log(incrementLargeInteger(num));
+console.log(incrementLargeInteger(num1));
 
 
 
