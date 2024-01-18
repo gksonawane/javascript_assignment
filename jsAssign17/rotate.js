@@ -2,7 +2,6 @@
 
 const rotateArray = (arr, steps) => {
 
-    const n = arr.length;
     for (let i = 0; i < steps; i++) {
         arr.unshift(arr.pop()); 
     }
